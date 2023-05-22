@@ -1,0 +1,132 @@
+.main__bg__right,
+.main__bg__left {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+.main__bg__left {
+  right: 0;
+  width: 10rem;
+}
+.main__bg__right {
+  left: 0;
+  width: 20rem;
+}
+
+.main__section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  padding-top: var(--offset-xxl);
+}
+
+.logo__section {
+  padding-top: var(--offset-xl);
+}
+.logo__image {
+  width: var(--logo-width);
+}
+.main__section__element {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--offset-s);
+}
+
+.main__section__header {
+  font: var(--font-header);
+  opacity: 0.6;
+  text-align: center;
+  padding: 0 var(--offset-s);
+}
+
+.main__section__text {
+  max-width: var(--offset-l-25);
+  text-align: center;
+}
+
+.timer__section {
+  display: flex;
+  flex-direction: row;
+  font: var(--font-digits);
+  align-items: start;
+}
+
+.timer__element {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.timer__digit {
+  font: var(--font-digits);
+}
+.timer__text {
+  color: var(--white-color);
+  padding: var(--offset-s) var(--offset-xl);
+  font: var(--font-main-text);
+  background-image: url(../../imgs/digit_bg.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  text-align: center;
+}
+
+.main__section__button {
+  padding: var(--offset-s) var(--offset-xl);
+  border-radius: var(--full-border-radius);
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--offset-s);
+}
+
+.email__section {
+  background-color: var(--primary-color);
+  width: 100%;
+  position: relative;
+}
+
+.email__form {
+  position: relative;
+  padding: var(--offset-xxl) 0;
+  width: calc(5.3 * var(--offset-xxxl));
+}
+
+.email__input {
+  border-radius: var(--full-border-radius);
+  padding: var(--offset-xs) var(--offset-l);
+  padding-right: var(--font-size-xxl);
+  width: 100%;
+  font: var(--font-main-text);
+  outline: none;
+  border: none;
+}
+
+.email__submit {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%) translateX(-30%);
+  background-color: var(--secondary-color);
+  height: var(--font-size-xl);
+  width: var(--font-size-xl);
+  border: none;
+  border-radius: var(--full-border-radius);
+}
+
+.other__events__anchor {
+  color: var(--white-color);
+  position: absolute;
+  cursor: pointer;
+  right: 0;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%) translateX(-30%);
+}

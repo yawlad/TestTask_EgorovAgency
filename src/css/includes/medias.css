@@ -1,0 +1,182 @@
+@media (max-width: 1670px) {
+  html {
+    font-size: 16px;
+  }
+  .event__data,
+  .event__data__bg {
+    width: 45rem;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  html {
+    font-size: 14px;
+  }
+  .events__collection {
+    flex-direction: column;
+  }
+  .event {
+    flex-direction: column-reverse;
+  }
+  .event__title {
+    flex-direction: row-reverse;
+    justify-content: start;
+    border: none;
+  }
+  .event__name {
+    transform: none;
+    writing-mode: horizontal-tb;
+  }
+  .event__data {
+    position: relative;
+  }
+  .event__data__text {
+    width: 100%;
+    bottom: 0;
+    top: auto;
+    height: fit-content;
+  }
+
+  .event__data__text__bg__number {
+    top: -60%;
+    right: -5%;
+    left: auto;
+  }
+
+  .event {
+    height: fit-content;
+    width: 100%;
+  }
+  .event__data,
+  .event__data__bg {
+    width: 75rem;
+    height: 50rem;
+  }
+
+  .not__active .event__data__bg {
+    transform: translateY(-50%);
+  }
+  .not__active .event__data {
+    z-index: -1;
+    height: 0;
+    width: 100%;
+  }
+
+  .event__title {
+    padding: var(--offset-xs) var(--offset-xxl);
+  }
+
+  .event__name {
+    font-size: var(--font-size-xl);
+  }
+
+  .event__title {
+    background: var(--event-background-not-active-media);
+    background-size: 500% 500%;
+    background-position: 10% 10%;
+  }
+
+  .not__active .event__title {
+    background-position: 50% 50%;
+  }
+  .event__check__section {
+    display: flex;
+    flex-direction: column;
+  }
+  .other__events__anchor {
+    position: static;
+    transform: none;
+    padding-bottom: var(--offset-l);
+  }
+}
+
+@media (max-width: 1100px) {
+  .event__data,
+  .event__data__bg {
+    width: 60rem;
+    height: 40rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .event__data,
+  .event__data__bg {
+    width: 50rem;
+    height: 35rem;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --logo-width: 12.5rem;
+
+    --font-size-xxxl: 3.5rem;
+    --font-size-xxl: 2.15rem;
+    --font-size-xl: 1.5rem;
+    --font-size-l: 1.25rem;
+    --font-size-m: 0.85rem;
+    --font-size-s: 0.7rem;
+
+    --offset-xxxl: 3.5rem;
+    --offset-xxl: 2.15rem;
+    --offset-xl: 1.5rem;
+    --offset-l: 1.25rem;
+    --offset-m: 0.85rem;
+    --offset-s: 0.7rem;
+    --offset-xs: 0.3rem;
+
+    --font-size-numbers-bg: 15rem;
+  }
+  html {
+    font-size: 13px;
+  }
+  .main__bg__right {
+    width: 14rem;
+  }
+  .main__bg__left {
+    width: 7rem;
+  }
+
+  .event__data,
+  .event__data__bg {
+    width: 35rem;
+    height: 25rem;
+  }
+}
+
+@media (max-width: 510px) {
+    :root {
+      --logo-width: 12rem;
+
+      --font-size-xxxl: 3rem;
+    }
+    html {
+      font-size: 12px;
+    }
+    .logo__section {
+      padding-top: var(--offset-xxxl);
+    }
+    .main__bg__right {
+      width: 12rem;
+    }
+    .main__bg__left {
+      width: 6rem;
+    }
+    .event {
+        max-width: 25rem;
+    }
+    .event__data,
+    .event__data__bg {
+      width: 25rem;
+      height: 17.5rem;
+    }
+
+    .timer__section {
+        gap: 0;
+    }
+
+    .other__events__anchor {
+        margin-top: calc(-1*var(--offset-xl));
+    }
+  }
+

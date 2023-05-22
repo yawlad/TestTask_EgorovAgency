@@ -1,0 +1,113 @@
+.all__events__section {
+  min-height: auto;
+}
+
+.events__collection {
+  display: flex;
+  padding: var(--offset-l);
+  padding-bottom: var(--offset-xxxl);
+}
+
+.event {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  transition: 0.5s;
+  z-index: 1;
+}
+.event__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: var(--offset-xl);
+  color: var(--white-color);
+  align-items: center;
+  padding: var(--offset-s);
+  border-right: 0.05rem solid var(--white-color);
+  border-left: 0.05rem solid var(--white-color);
+  background: var(--event-background-not-active);
+  transition: var(--animation-time);
+  background-size: 1000%;
+  background-position: 95% 95%;
+  cursor: default;
+}
+.event__name {
+  transform: rotate(180deg);
+  writing-mode: vertical-rl;
+  font: var(--font-subheaders);
+  width: 100%;
+}
+.event__number {
+  font: var(--font-numbers);
+}
+.event__data {
+  position: relative;
+  z-index: -1;
+  transition: var(--animation-time);
+}
+.event__data__bg {
+  position: relative;
+  height: 100%;
+  transition: var(--animation-time);
+}
+.event__data,
+.event__data__bg {
+  width: 50rem;
+}
+.event__data__text {
+  opacity: 1;
+  width: 20rem;
+  height: 100%;
+  background-color: #121212b7;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: var(--offset-xs);
+  color: var(--white-color);
+  padding: var(--offset-xxl) var(--offset-l);
+  transition: var(--animation-time);
+}
+
+.event__data__text__bg__number {
+  font: var(--font-numbers-bg);
+  color: var(--font-color-numbers-bg);
+  position: absolute;
+  top: -5rem;
+  left: -7rem;
+  z-index: -1;
+}
+
+.event__data__name {
+  font: var(--font-main-text-important);
+}
+.event__data__date {
+  font: var(--font-main-text);
+}
+.event__data__button {
+  color: var(--white-color);
+  border: 0.05rem solid var(--white-color);
+  border-left: 0.35rem solid var(--white-color);
+  padding: var(--offset-s) var(--offset-xl);
+  width: fit-content;
+  cursor: pointer;
+  position: relative;
+  z-index: 3;
+}
+
+.not__active .event__data {
+  z-index: -1;
+  width: 0;
+}
+
+.not__active .event__data__bg {
+  transform: translateX(-50%);
+}
+
+.not__active .event__title {
+  background-position: 50% 50%;
+  cursor: pointer;
+}

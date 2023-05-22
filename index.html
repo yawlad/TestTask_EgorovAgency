@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>TechTask</title>
+  </head>
+  <body>
+    <main class="main">
+      <img src="./src/imgs/main_bg_right.svg" alt="" class="main__bg__right" />
+      <img src="./src/imgs/main_bg_left.svg" alt="" class="main__bg__left" />
+      <section class="main__section">
+        <div class="logo__section main__section__element hovered__size__up">
+          <a href="./index.html"
+            ><img src="./src/imgs/logo.svg" alt="" class="logo__image"
+          /></a>
+        </div>
+        <div class="title__section main__section__element">
+          <h2 class="main__section__header">Under Construction</h2>
+          <p class="main__section__text">
+            We're making lots of improvements and will be back soon
+          </p>
+        </div>
+        <div class="timer__section main__section__element">
+          <div class="timer__element">
+            <div class="timer__digit" id="days">92</div>
+            <div class="timer__text">Days</div>
+          </div>
+          :
+          <div class="timer__element">
+            <div class="timer__digit" id="hours">11</div>
+            <div class="timer__text">Hours</div>
+          </div>
+          :
+          <div class="timer__element">
+            <div class="timer__digit" id="minutes">41</div>
+            <div class="timer__text">Minutes</div>
+          </div>
+          :
+          <div class="timer__element">
+            <div class="timer__digit" id="seconds">48</div>
+            <div class="timer__text">Seconds</div>
+          </div>
+        </div>
+        <div class="event__check__section main__section__element">
+          <p class="main__section__text">Check our event page when you wait:</p>
+          <a
+            href="https://google.com/"
+            target="_blank"
+            class="main__section__button hovered__size__up"
+          >
+            Go to the event <i class="fa fa-arrow-right" aria-hidden="true"></i>
+          </a>
+        </div>
+
+        <div class="email__section main__section__element">
+          <form action="#" class="email__form" id="email_form">
+            <input
+              type="text"
+              placeholder="Enter your Email and get notified"
+              class="email__input"
+            />
+            <button type="submit" class="email__submit">
+              <i class="fa fa-arrow-right" aria-hidden="true"></i>
+            </button>
+          </form>
+
+          <a href="#all__events" class="other__events__anchor">
+            Other events <i class="fa fa-arrow-down" aria-hidden="true"></i>
+          </a>
+        </div>
+      </section>
+
+      <section class="all__events__section main__section" id="all__events">
+        <div class="main__section__element">
+          <h2 class="main__section__header">ALL EVENTS</h2>
+        </div>
+
+        <div class="main__section__element">
+          <div class="events__collection" id="events_collection">
+            <div class="event">
+              <div class="event__title">
+                <div class="event__name">Hawaiian party</div>
+                <div class="event__number">01</div>
+              </div>
+              <div class="event__data">
+                <img
+                  src="./src/imgs/img_01.png"
+                  alt=""
+                  class="event__data__bg"
+                />
+                <div class="event__data__text glass__effect">
+                  <div class="event__data__text__bg__number">01</div>
+                  <h5 class="event__data__name">Hawaiian party</h5>
+                  <p class="event__data__date">13.02.2023</p>
+                  <a
+                    href="https://google.com/"
+                    target="_blank"
+                    class="hovered__size__up event__data__button"
+                    >More information</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="not__active event">
+              <div class="event__title">
+                <div class="event__name">Мafia party</div>
+                <div class="event__number">02</div>
+              </div>
+              <div class="event__data">
+                <img
+                  src="./src/imgs/img_01.png"
+                  alt=""
+                  class="event__data__bg"
+                />
+                <div class="event__data__text glass__effect">
+                  <div class="event__data__text__bg__number">02</div>
+                  <h5 class="event__data__name">Мafia party</h5>
+                  <p class="event__data__date">13.02.2023</p>
+                  <a
+                    href="https://google.com/"
+                    target="_blank"
+                    class="hovered__size__up event__data__button"
+                    >More information</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="not__active event">
+              <div class="event__title">
+                <div class="event__name">Party</div>
+                <div class="event__number">03</div>
+              </div>
+              <div class="event__data">
+                <img
+                  src="./src/imgs/img_01.png"
+                  alt=""
+                  class="event__data__bg"
+                />
+                <div class="event__data__text glass__effect">
+                  <div class="event__data__text__bg__number">03</div>
+                  <h5 class="event__data__name">Party</h5>
+                  <p class="event__data__date">13.02.2023</p>
+                  <a
+                    href="https://google.com/"
+                    target="_blank"
+                    class="hovered__size__up event__data__button"
+                    >More information</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="not__active event">
+              <div class="event__title">
+                <div class="event__name">Party on the beach</div>
+                <div class="event__number">04</div>
+              </div>
+              <div class="event__data">
+                <img
+                  src="./src/imgs/img_01.png"
+                  alt=""
+                  class="event__data__bg"
+                />
+                <div class="event__data__text glass__effect">
+                  <div class="event__data__text__bg__number">04</div>
+                  <h5 class="event__data__name">Party on the beach</h5>
+                  <p class="event__data__date">13.02.2023</p>
+                  <a
+                    href="https://google.com/"
+                    target="_blank"
+                    class="hovered__size__up event__data__button"
+                    >More information</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="not__active event">
+              <div class="event__title">
+                <div class="event__name">Home Security</div>
+                <div class="event__number">05</div>
+              </div>
+              <div class="event__data">
+                <img
+                  src="./src/imgs/img_01.png"
+                  alt=""
+                  class="event__data__bg"
+                />
+                <div class="event__data__text glass__effect">
+                  <div class="event__data__text__bg__number">05</div>
+                  <h5 class="event__data__name">Home Security</h5>
+                  <p class="event__data__date">13.02.2023</p>
+                  <a
+                    href="https://google.com/"
+                    target="_blank"
+                    class="hovered__size__up event__data__button"
+                    >More information</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="not__active event">
+              <div class="event__title">
+                <div class="event__name">Network Design & Implementation</div>
+                <div class="event__number">06</div>
+              </div>
+              <div class="event__data">
+                <img
+                  src="./src/imgs/img_01.png"
+                  alt=""
+                  class="event__data__bg"
+                />
+                <div class="event__data__text glass__effect">
+                  <div class="event__data__text__bg__number">06</div>
+                  <h5 class="event__data__name">
+                    Network Design & Implementation
+                  </h5>
+                  <p class="event__data__date">13.02.2023</p>
+                  <a
+                    href="https://google.com/"
+                    target="_blank"
+                    class="hovered__size__up event__data__button"
+                    >More information</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="not__active event">
+              <div class="event__title">
+                <div class="event__name">System Design & Engineering</div>
+                <div class="event__number">07</div>
+              </div>
+              <div class="event__data">
+                <img
+                  src="./src/imgs/img_01.png"
+                  alt=""
+                  class="event__data__bg"
+                />
+                <div class="event__data__text glass__effect">
+                  <div class="event__data__text__bg__number">07</div>
+                  <h5 class="event__data__name">System Design & Engineering</h5>
+                  <p class="event__data__date">13.02.2023</p>
+                  <a
+                    href="https://google.com/"
+                    target="_blank"
+                    class="hovered__size__up event__data__button"
+                    >More information</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="not__active event">
+              <div class="event__title">
+                <div class="event__name">Client Care Plans</div>
+                <div class="event__number">08</div>
+              </div>
+              <div class="event__data">
+                <img
+                  src="./src/imgs/img_01.png"
+                  alt=""
+                  class="event__data__bg"
+                />
+                <div class="event__data__text glass__effect">
+                  <div class="event__data__text__bg__number">08</div>
+                  <h5 class="event__data__name">Client Care Plans</h5>
+                  <p class="event__data__date">13.02.2023</p>
+                  <a
+                    href="https://google.com/"
+                    target="_blank"
+                    class="hovered__size__up event__data__button"
+                    >More information</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script
+      src="https://kit.fontawesome.com/36ed5ed2fc.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./src/scripts/constants.js"></script>
+    <script src="./src/scripts/timer.js"></script>
+    <script src="./src/scripts/handlers.js"></script>
+  </body>
+</html>
