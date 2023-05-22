@@ -1,10 +1,9 @@
-{
-  const countdownDate = new Date("May 31, 2023 00:00:00").getTime(); // заданная дата в миллисекундах
-  const daysContainer = document.getElementById("days");
-  const hoursContainer = document.getElementById("hours");
-  const minutesContainer = document.getElementById("minutes");
-  const secondsContainer = document.getElementById("seconds");
-
+function addTimer() {
+  function formatDateTime(obj) {
+    obj = String(obj);
+    const result = obj.length >= 2 ? obj : `0${obj}`;
+    return result;
+  }
   function timer() {
     const now = new Date().getTime();
 
@@ -27,12 +26,14 @@
     }
   }
 
-  function formatDateTime(obj) {
-    obj = String(obj);
-    const result = obj.length >= 2 ? obj : `0${obj}`;
-    return result;
-  }
+  const countdownDate = new Date("May 31, 2023 00:00:00").getTime();
+  const daysContainer = document.getElementById("days");
+  const hoursContainer = document.getElementById("hours");
+  const minutesContainer = document.getElementById("minutes");
+  const secondsContainer = document.getElementById("seconds");
 
   timer();
   const timerInterval = setInterval(timer, 1000);
 }
+
+addTimer();
