@@ -20,10 +20,6 @@ function addTimer() {
     hoursContainer.textContent = formatDateTime(hours);
     minutesContainer.textContent = formatDateTime(minutes);
     secondsContainer.textContent = formatDateTime(seconds);
-
-    if (distance < 0) {
-      clearInterval(timerInterval);
-    }
   }
 
   const countdownDate = new Date("May 31, 2023 00:00:00").getTime();
